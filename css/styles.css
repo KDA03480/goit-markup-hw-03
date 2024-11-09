@@ -212,13 +212,14 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 8px;
 }
 
 .section-team-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin: 24px;
 }
 
 .features-list-item {
@@ -235,74 +236,83 @@ img {
   padding-bottom: 120px;
 }
 
-.card-title {
+.section-team-text {
   text-align: center;
-  margin-bottom: 72px;
 }
-
 .list-team {
   display: flex;
-  gap: 24px;
+  gap: 40px;
 }
 
 .list-item {
   width: calc((100% - 72px) / 4);
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  padding: 0px 0px 32px 0px;
 }
-
 .name-container {
-  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
 }
 
-.section-title {
+.card-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-bottom: 8px;
 }
 
 .section-team-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  color: #434455;
 }
 
 /* Portfolio */
 
+.section {
+  padding: 120px 0;
+}
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
-  column-gap: 24px;
   row-gap: 48px;
+  column-gap: 24px;
+}
+
+.section-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
 }
 
 .portfolio-item {
-  background-color: #ffffff;
   width: calc((100% - 48px) / 3);
 }
 
 .portfolio-title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 1.2;
   letter-spacing: 0.02em;
-  text-align: center;
   color: #2e2f42;
-  margin-bottom: 8px;
 }
-
 .section-team-text {
-  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
-  padding-right: 314px;
 }
 
 .card-title,
@@ -311,12 +321,10 @@ img {
 }
 
 .border-container {
+  padding: 32px 16px;
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
-  padding: 32px 16px;
-  width: 360px;
-  height: 120px;
 }
 
 /* FOOTER */

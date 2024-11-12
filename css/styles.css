@@ -1,16 +1,15 @@
 /* reset */
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0, 02em;
   color: #434455;
   background-color: #fff;
 }
 a {
   text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style-type: none;
+  color: #2e2f42;
 }
 
 button {
@@ -24,11 +23,12 @@ h4,
 h5,
 h6,
 p {
+  padding: 0;
   margin: 0;
 }
 
-ul,
-ol {
+ul {
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -38,8 +38,8 @@ img {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 /* header */
@@ -239,7 +239,7 @@ img {
 .section-team-text {
   text-align: center;
 }
-.list-team {
+.team-list {
   display: flex;
   gap: 40px;
 }

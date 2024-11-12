@@ -35,11 +35,26 @@ ul {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .section {
   padding-top: 24px;
   padding-bottom: 24px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* header */
@@ -178,87 +193,63 @@ img {
 
 /* S.F */
 
+.features-section {
+  padding: 120px;
+}
+
 .features-list {
   display: flex;
   gap: 24px;
-}
-
-.section-title {
-  font-weight: 700px;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-transform: capitalize;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-.card-title {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-}
-
-.section-team-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin: 24px;
 }
 
 .features-list-item {
   width: calc((100% - 72px) / 4);
 }
 
-/* TEAM */
-.section-team {
-  background-color: #f4f4fd;
-  height: 732px;
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 120px;
-  padding-bottom: 120px;
+.features-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
 }
 
 .section-team-text {
+  line-height: 1.5;
+}
+
+/* TEAM */
+.section-team {
+  padding: 120px;
+  background-color: #f4f4fd;
+}
+
+.section-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   text-align: center;
+  color: #2e2f42;
+  text-transform: capitalize;
 }
 .team-list {
   display: flex;
-  gap: 40px;
+  gap: 24px;
 }
 
 .list-item {
   width: calc((100% - 72px) / 4);
   background: #ffffff;
   border-radius: 0px 0px 4px 4px;
-  padding: 0px 0px 32px 0px;
 }
-.name-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 8px;
+
+. .name-container {
+  padding: 32px 0;
 }
 
 .card-title {
+  margin-top: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -268,12 +259,8 @@ img {
 }
 
 .section-team-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: center;
-  color: #434455;
 }
 
 /* Portfolio */
